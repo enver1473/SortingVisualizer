@@ -171,11 +171,14 @@ public class CanvasPane extends JPanel {
     }
     
     public void initializeArray() {
-    	int uniqueItems = this.uniqueCount;
-		for (int i = 1; i < uniqueItems + 1; i++) {
+    	// int uniqueItems = this.uniqueCount;
+		for (int i = 0; i < this.count; i++) { // uniqueItems + 1
+			this.array[i] = i + 1;
+			/*
 			for (int j = 0; j < this.count / uniqueItems + 1; j++) {
+				if (((i - 1) * (this.count) / uniqueItems) + j > this.count - 1) continue;
 				this.array[((i - 1) * (this.count) / uniqueItems) + j] = (int) (i * ((double)(this.count) / uniqueItems)) + 1;
-			}
+			}*/
         }
 		Visual.updateMainRender();
 		this.delays.setDelayFactor((double)(Delays.MULTIPLIER_FACTOR / count));

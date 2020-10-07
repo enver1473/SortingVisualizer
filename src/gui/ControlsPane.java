@@ -292,8 +292,8 @@ public class ControlsPane extends JPanel {
 
 		innerWrapper1.add(shufflesComboWrapper);
 		innerWrapper1.add(runSortBtnWrapper);
-		innerWrapper1.add(stopSortBtnWrapper);
-		innerWrapper1.add(uniqueCountBtnWrapper);
+		innerWrapper1.add(stopSortBtnWrapper);/*
+		innerWrapper1.add(uniqueCountBtnWrapper);*/
 		
 		ArrayPane arrayPane = new ArrayPane(canvas.getArray(), canvas.getMainFrame(), canvas);
 		innerWrapper2.add(arrayPane);
